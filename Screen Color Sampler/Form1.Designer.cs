@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmViewer));
             TableMain = new TableLayoutPanel();
             GrpColor = new GroupBox();
             PanelColor = new Panel();
@@ -205,6 +206,7 @@
             ClientSize = new Size(484, 261);
             Controls.Add(TableMain);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FrmViewer";
